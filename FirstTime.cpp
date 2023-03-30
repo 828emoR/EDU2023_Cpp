@@ -9,16 +9,83 @@ using namespace std;
 //
 //
 //}
-void main()
-{
-	cout << "ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä " << endl;
-
-	char name[256];
-	cin >> name;
-
-	cout << name << "´Ô C++¼¼°è¿¡ ¿À½Å°ÍÀ» È¯¿µÇÕ´Ï´Ù. " << endl;
-
-}
-//void = ë°˜í™˜ê°’ ì—†ìŒ. return ì—†ìœ¼ë¯€ë¡œ return  êµ¬ë¬¸ ì‚¬ìš©ë¶ˆê°€.
+//void main()
+//{
+//	cout << "ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä " << endl;
+//
+//	char name[256];
+//	cin >> name;
+//
+//	cout << name << "´Ô C++¼¼°è¿¡ ¿À½Å°ÍÀ» È¯¿µÇÕ´Ï´Ù. " << endl;
+//
+//}
 
 //cout °ú cin Àº ²À °³³äÀ» ¾Ë¾ÆµÎÀÚ.
+
+//230330 ¿ÀÀü
+//void main()
+//{
+//	int a = 3;
+//	
+//	//int °¡ ¾Æ´Ï´õ¶óµµ ¾Õ¿¡¼­ ¼±¾ğÇÑ Å¸ÀÔÀº ¾Õ¿¡ signed°¡ ºÙ¾îÀÖÀ½. ±× ¹İ´ëÀÇ °æ¿ì¸¦ ¸¸µå·Á¸é unsigned ¸¦ ºÙÇô¼­ »ç¿ë.
+//	//ex(unsignd = 0~42¾ï, int = -21¾ï ~ 21¾ï ±îÁöÀÇ ¼ö
+//	//& = ÁÖ¼Ò ÁöÁ¤ÀÚ, * = Æ÷ÀÎÅÍ ¿¬»êÀÚ. Æ÷ÀÎÅÍÇü ¿¬»êÀÚ¿¡¼­´Â °ªÀÇ ÀúÀåÀÌ ºÒ°¡. 
+//	int* pa = &a;
+//	cout << pa << endl << *pa << endl;
+//	cout << &a << endl << a << endl;
+//}
+
+//230330 ¿ÀÀü2
+//class CPerson
+//{
+//public:
+//	const char* m_Name;
+//	int m_Age;
+//
+//		void print()
+//	{
+//		cout << "Name: " << m_Name << endl;
+//		cout << "Age: " << m_Age << endl;
+//	}
+//};
+//
+//int main()
+//{
+//	CPerson p[2];
+//	CPerson* pPer;
+//
+//p[0].m_Name = "Kim do Hyung";
+//p[0].m_Age = 11; 
+//
+//pPer = &p[0];
+//pPer->print();
+//	
+//
+//
+//p[1].m_Name = "Kim Na In";
+//p[1].m_Age = 9;
+//p[1].print();
+//
+//return 0;
+//}
+//void = ¹İÈ¯°ª ¾øÀ½. return ¾øÀ¸¹Ç·Î return  ±¸¹® »ç¿ëºÒ°¡.
+
+//## const - ±âÈ£»ó¼ö ##//
+
+//int ga; // 0ÃÊ±âÈ­
+//int gb = 1; // 1ÃÊ±âÈ­
+//
+////g : Global.
+//// ga - 0ÃÊ±âÈ­ : = µÚ¿¡ °ªÀÌ ¾øÀ¸¹Ç·Î ÄÄÆÄÀÏ·¯´Ü¿¡¼­ 0À¸·Î Ç×»ó º¯È¯ÇÔ.
+//
+//void main()
+//{
+//	int a; // ¹ÌÁ¤ÀÇ °ª ÃÊ±âÈ­
+//	int b = 2; // 2ÃÊ±âÈ­
+//
+//	cout << ga << endl;
+//	cout << gb << endl;
+//	cout << a << endl;
+//	cout << b << endl;
+//}
+}
