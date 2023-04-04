@@ -88,4 +88,38 @@ using namespace std;
 //	cout << a << endl;
 //	cout << b << endl;
 //}
+//}
+//
+//void main()
+//{
+//	short a, b;
+//	cout << "input the First number = " << endl;
+//	cin >> a;
+//	cout << " input the Second Number = " << endl;
+//	cin >> b;
+//
+//	cout << "Sum = " << a + b << endl;
+//	cout << "Sub = " << a - b << endl;
+//	cout << "Mul = " << a * b << endl;
+//	cout << "Div = " << result << endl;
+//	cout << "Sum = " << a / b << endl;
+//	cout << "Rem = " << a % b << endl;
+//}
+int main()
+{
+	int a, b, c;
+	cout << "±¹";
+
+	cin >> a;
+
+	cout << "¿µ";
+
+	cin >> b;
+
+	cout << "¼ö";
+
+	cin >> c;
+
+	cout << "ÃÑÁ¡" << a + b + c << endl;
+	cout << "Æò±Õ : " << (a + b + c) / 3.0 << endl;
 }
