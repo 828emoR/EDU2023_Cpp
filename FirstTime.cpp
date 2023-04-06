@@ -23,6 +23,7 @@ using namespace std;
 //cout 과 cin 은 꼭 개념을 알아두자.
 
 //230330 오전
+
 //void main()
 //{
 //	int a = 3;
@@ -36,6 +37,7 @@ using namespace std;
 //}
 
 //230330 오전2
+
 //class CPerson
 //{
 //public:
@@ -105,21 +107,190 @@ using namespace std;
 //	cout << "Sum = " << a / b << endl;
 //	cout << "Rem = " << a % b << endl;
 //}
-int main()
+//int main()
+//{
+//	int a, b, c;
+//	cout << "국";
+//
+//	cin >> a;
+//
+//	cout << "영";
+//
+//	cin >> b;
+//
+//	cout << "수";
+//
+//	cin >> c;
+//
+//	cout << "총점" << a + b + c << endl;
+//	cout << "평균 : " << (a + b + c) / 3.0 << endl;
+//}
+//void main()
+//{
+//	int a, b;
+//
+//	a = 1;
+//
+//	cout << ++a << endl; //2
+//
+//	a = 1;
+//	b = ++a;
+//	cout << b << endl; //2
+//
+//	a = 1;
+//	cout << a++ << endl; //1
+//
+//	a = 1;
+//	b = a++;
+//	cout << b << endl; //1
+//
+//	a = 1;
+//	++a;
+//	cout << a << endl; //2
+//
+//	a = 1;
+//	a++;
+//	cout << a << endl; //2
+//
+//}
+//void main()
+//{
+//	int a = 4;
+//	++a = 1; // OK:l-value
+//	cout << a << endl;
+//	//a++ = 1; // Error: r-value
+//}
+//void main()
+//{
+//	int a = 0;
+//
+//	if (a = 1)
+//	{
+//		cout << "a == 1" << endl;
+//
+//	}
+//	else
+//	{
+//		cout << "a != 1 " << endl;
+//	}
+//
+//}
+//int Func()
+//{
+//	cout << "Func" << endl;
+//	return 1;
+//}
+//void main()
+//{
+//	if (0 && Func())
+//	{
+//		cout << "main" << endl;
+//	}
+//}
+//void main()
+//{
+//	cout << ~9 << endl;
+//	cout << !9 << endl;
+//}
+//void main()
+//정수
+//{
+//	int a = 3;
+//	int b = 7;
+//
+//	a = a ^ b;
+//	b = a ^ b;
+//	a = a ^ b;
+//	cout << a << " " << b << endl;
+//}
+//
+//void main() {
+//	//실수
+//	float a = 3.7;
+//	float b = 7.3;
+//
+//	*(int)&a = *(int)&a ^ *(int)&b;
+//	*(int)&b = *(int)&a ^ *(int)&b;
+//	*(int)&a = *(int)&a ^ *(int)&b;
+//	cout << a << " " << b << endl;
+//}
+
+// ## 비트 이동 연산자(<<, >>) ## //
+
+//void main()
+//{
+//	char c = 1;
+//
+//	c = c << 7;
+//	cout << +c << endl;
+//
+//	c = c >> 7;
+//	cout << +c << endl;
+//}
+//void main() {
+//	char c; // signed
+//
+//	c = 2; // [0000,0010] 2
+//	c = c >> 1; // [0000,0001] 1
+//	cout << +c << endl;
+//
+//	c = -126;	// [1000,0010] -126
+//	c = c >> 1; // [1100,0001] -63
+//	cout << +c << endl;
+//}
+
+//## 삼항 연산자 ##//
+
+//int NOT(int arg)
+//{
+//	return arg ? 0 : 1;
+//}
+//void main()
+//{
+//	cout << NOT(3) << " " << NOT(0) << endl;
+//}
+
+// ## 기타 연산자 - sizeof ## //
+
+//void main() {
+//	cout << sizeof(char) << endl; //1 byte
+//	cout << sizeof(int) << endl;  // 4byte
+//	cout << sizeof(double) << endl;  // 8byte
+//
+//	char c;
+//	int i;
+//	double d;
+//	int arr[4];
+//
+//	cout << sizeof(c) << endl;	// 1byte
+//	cout << sizeof(i) << endl;	// 4byte
+//	cout << sizeof(d) << endl;	// 4byte
+//	cout << sizeof(arr) << endl; // 16byte
+//}
+
+//## 기타 연산자 - 타입 변환 연산자 ##//
+/*
+* (TYPE)식
+* 식(TYPE)
+* static_cast<TYPE>(식)
+* dynamic_cast<TYPE>(식)
+* const_cast<TYPE>(식)
+* reinterpret_cast<TYPE>(식)
+*/
+
+//## 기타 연산자 - 타입 변환 연산자2 ##//
+/*void main()
 {
-	int a, b, c;
-	cout << "국";
+	cout << fixed; //고정형.
+	cout.precision(0); // 소수점 뒷자리 개수 정의
+	int i = 3.141592; //3
+	float f = 67108870; //6710872
 
-	cin >> a;
-
-	cout << "영";
-
-	cin >> b;
-
-	cout << "수";
-
-	cin >> c;
-
-	cout << "총점" << a + b + c << endl;
-	cout << "평균 : " << (a + b + c) / 3.0 << endl;
+	cout << i << " " << f << endl;
+}
+*/
+void main()
+{
+	cout << 1 / 2 << endl;
+	cout << (double)1 / 2 << endl;
 }
