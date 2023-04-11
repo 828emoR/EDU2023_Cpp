@@ -288,9 +288,81 @@ using namespace std;
 
 	cout << i << " " << f << endl;
 }
-*/
+
 void main()
 {
 	cout << 1 / 2 << endl;
 	cout << (double)1 / 2 << endl;
 }
+*/
+
+//## 단순 if 문 ##//
+/*void main()
+{
+	if (0)
+		cout << 1 << endl;
+	cout << 2 << endl;
+	cout << 3 << endl;
+}
+*/
+/*#define SWAP(a, b) a ^= b; b ^= a; a ^= b;
+void main()
+{
+	int a = 0;
+	int b = 1;
+
+	if (1) {
+		SWAP(a, b);
+	}
+		
+
+	cout << a << " " << b << endl;
+
+	//결과 = 1 1
+}
+*/
+
+//## if else ##//
+/*int main()
+{
+	int nai, walk, zzak, a, a2;
+	
+	cout << "나이를 입력해주세요" << endl;
+	cin >> nai;
+
+	if (nai < 20)
+		cout << "20세 이하입니다.할인 대상입니다." << endl;
+
+	cout << "걸음 수 입력" << endl;
+	cin >> walk;
+
+	if (walk >= 1000)
+		cout << "1000걸음 이상을 걸었습니다.목표를 달성했습니다." << endl;
+
+	cout << "수 입력 ㄱ" << endl;
+	cin >> zzak;
+
+	if (zzak % 2 == 0)
+		cout << "짝수입니다" << endl;
+	else 
+	{
+		cout << "홀수입니다" << endl;
+	}
+
+	cout << "시간을 입력해주세요" << endl;
+	cin >> a;
+
+	if (a < 12)
+		cout << "오전입니다" << endl;
+	else
+		cout << "오후임미다" << endl;
+
+	cout << "수를 입력해주세요" << endl;
+	cin >> a2;
+
+	if (a2 % 3 == 0 && a2 % 5 == 0)
+		cout << "3과 5의 배수잼" << endl;
+	else
+		cout << "3과 5의 배수가 아닌데오?" << endl;
+}
+*/
