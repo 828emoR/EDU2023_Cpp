@@ -366,3 +366,160 @@ void main()
 		cout << "3과 5의 배수가 아닌데오?" << endl;
 }
 */
+
+//##복합조건식##//
+/*void main()
+{
+	int i;
+	while (true) {
+
+		cout << "년도를 입력해주세요" << endl;
+		cin >> i;
+		
+		if (i % 4 == 0 && (i % 100 != 0 || i % 400 == 0))
+			cout << i <<"년은 윤년입니다" << endl;
+		else
+			cout << i << "년은 평년입니다." << endl;
+
+	
+
+	}
+//	for (i = 1000; i < 3000 = i + 1)
+
+}
+*/
+/*int main()
+{
+	int sung;
+	cout << "현재 성적을 입력해주세요" << endl;
+	cin >> sung;
+
+	switch (sung / 10) {
+		
+
+	case 9: 
+		cout << "A입니다.";
+			break;
+	case 8: 
+		cout << "B입니다.";
+			break;
+	case 7: 
+		cout << "C입니다.";
+			break;
+	case 6: 
+		cout << "D입니다.";
+			break;
+	case 5:
+		cout << "F입니다.";
+			break;
+
+	}
+	
+}
+*/
+/*
+//## switch case 문##//
+	int add(int a, int b)
+	{
+		return a + b;
+	 }
+	void main()
+		int a, b;
+
+	switch (add(1, 2))
+	{
+	case 0:
+
+	case 1:
+
+	case 2:
+
+	case 3:
+
+	case 4:
+	}
+	*/
+
+/*void main()
+{
+	int Sum = 0;
+	for (int i = 0; i < 11; i++)
+		Sum += i;
+
+	cout << Sum << endl;
+}
+
+void main()
+{
+	int Sum = 0;
+	int i = 0;
+	for (;;)
+	{
+		Sum += i;
+		i++; 
+		
+		if (1 > 10)
+			break;
+		
+
+	}
+	cout << Sum << endl;
+}
+*/
+/*void main()
+{
+	
+	int Sum
+	
+	cout << "입력" << endl;
+	cin >> Sum;
+
+		for (int i = 2; i < Sum; i++)
+	{
+			if (Sum % i == 0)
+			{
+				flag = 0;
+			}
+			
+		}
+		if (flag == 1)
+			cout << "니 정수는 소수가 아니다" << endl;
+		else
+			cout << "니 정수는 소수가 맞다" << endl;
+
+	
+}
+
+void main() {
+	{
+		for (int i = 2; i < 10; i++)
+		{
+			for (int j = 1; j < 10; j++)
+				cout << i << "*" << j << "=" << i * j << endl;
+			cout << endl;
+		}
+	}
+}
+
+*/
+void main()
+{
+	int Num;
+	int flag = 1;
+
+	for (Num = 2; Num <= 100; Num++)
+	{
+		flag = 1;
+		for (int i = 2; i < Num; i++)
+		{
+			if (Num % i == 0)
+			{
+				flag = 0;
+			}
+		}
+		if (flag == 1)
+		{
+			cout << Num << " ";
+		}
+	}
+}
