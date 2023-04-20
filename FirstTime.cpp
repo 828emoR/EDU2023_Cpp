@@ -502,7 +502,8 @@ void main() {
 }
 
 */
-void main()
+
+/*void main()
 {
 	int Num;
 	int flag = 1;
@@ -522,4 +523,184 @@ void main()
 			cout << Num << " ";
 		}
 	}
+}
+*/
+//## 반복문과 continue ##//
+/*void main()
+{
+	for (int i = 0; i < 10; i++)
+	{
+		if (i % 2 == 0)
+			continue;
+
+	cout << i << endl;
+	}
+}
+*/
+
+//##Target##//
+/*void main()
+{
+	goto TARGET;
+	cout << "start" << endl;
+
+	TARGET:
+	cout << "Target" << endl;
+}
+*/
+
+//## 반복문과 goto 와 Exit ##//
+/*void main()
+{
+	int Sum = 0;
+	for (int i = 0; i < 100; i++)
+	{
+		for (int j = 0; j <= i; j++)
+		{
+			Sum += j;
+			if (Sum > 1000)
+			{
+				cout << i << ":" << Sum << endl;
+				goto EXIT;
+
+			}
+		}
+	}
+EXIT:
+	cout << "end" << endl;
+}
+*/
+//##사용자로부터 정수 N을 받아 그 수만큼 출력하되 1+2-3+4...(n-1)-1이 되게 출력##//
+/*void main()
+{
+	int sum = 0;
+	int N;
+	cout << "입력 >" << endl;
+	cin >> N;
+	
+	for (int i = 0; i <= N; i++)
+	{
+		if (i % 2 == 0)
+			sum = sum - i;
+		else
+			sum = sum + i;
+	}
+	cout << sum << endl;
+}
+
+*/
+
+/*void main()
+{
+	int i = 1, j = 1;
+	int sum = 0;
+	int Tot = 0;
+	
+	while (1)
+	{
+		sum = sum + i;
+
+		if (sum > 100000)
+		{
+			break;
+		}
+
+		i++;
+	}
+	cout << i << " " << sum << endl;
+	
+	for (j = 1; j < 447; j++)
+		Tot = Tot + j;
+	cout << j << " " << Tot << endl;
+}
+*/
+
+/*void main()
+{
+	char c1 = 2;
+	c1 = c1 >> 1;
+	cout << c1 << endl;
+	char c2 = -126;
+	c2 = c2 >> 1;
+	cout << +c2 << endl;
+}
+*/
+
+//## 중요  포  인  터  중요 ##//
+
+/*void main()
+{
+	int a = 1;
+	cout << a << endl;
+	cout << &a << endl;
+}
+*/
+
+/*void main()
+{
+	int a = 1;
+	int* p = &a;
+	
+	cout << a << endl;
+	cout << &a << endl;
+
+	cout << *p << endl;
+	cout << p << endl;
+
+	cout << sizeof(a) << endl;
+	cout << sizeof(p) << endl;
+
+}
+
+
+void main()
+{
+	int a = 3;
+	int* p1, p2, * p3;
+
+	p1 = &a;
+	p2 = &a; //error
+	p3 = &a;
+}
+*/
+/*void main()
+{
+	int a = 0;
+	char* s = (char*)&a;
+
+	*s = 'C';
+	*(s + 1) = '+'; 
+	*(s + 2) = '+'; 
+	*(s + 3) = '\0';
+
+	cout << (char*)&a << endl;
+	cout << s << endl;
+	cout << s << endl;
+	cout << +(s+1) << endl;
+	cout << +(s+2) << endl;
+	cout << +(s+3) << endl;
+
+}
+*/
+/*void main()
+{
+	char* pC = NULL;
+	int* pI = NULL;
+	double* pD = NULL;
+
+	cout << (void*)(pC + 1) << endl;
+	cout << (void*)(pI + 1) << endl;
+	cout << (void*)(pD + 1) << endl;
+
+}
+*/
+
+void main()
+{
+	int* pI = NULL;
+	double* pD = NULL;
+	
+	cout << (void*)((char*)pI + 2) << endl;
+	cout << (void*)((char*)pD + 1) << endl;
+
 }
